@@ -1,0 +1,28 @@
+{
+  "name": "jamesvweston/php-utilities",
+  "description": "A Collection Of PHP Utility Classes",
+  "keywords": [
+    "php",
+    "utilities"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "homepage": "https://github.com/jamesvweston/php-utilities",
+  "authors":[
+    {
+      "name": "James Weston",
+      "email": "jamesvweston@users.noreply.github.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "jamesvweston\\Utilities\\": "src"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable" : true
+}
