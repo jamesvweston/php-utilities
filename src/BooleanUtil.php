@@ -12,7 +12,7 @@ class BooleanUtil
      */
     public static function isTrue($param)
     {
-        return $param == 'true' || $param == '1' || $param == 'yes' || $param == true;
+        return $param === 'true'  || $param === true || $param === '1' || $param === 1 || $param === 'yes';
     }
 
     /**
@@ -21,7 +21,7 @@ class BooleanUtil
      */
     public static function isFalse($param)
     {
-        return $param == 'false' || $param == '0' || $param == 'no' || $param == false;
+        return $param === 'false'  || $param === false || $param === '0' || $param === 0 || $param === 'no';
     }
 
     /**
