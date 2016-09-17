@@ -3,7 +3,7 @@
 namespace jamesvweston\Utilities;
 
 
-class InputUtility
+class InputUtil
 {
 
     /**
