@@ -27,7 +27,7 @@ class InputUtil
     {
         if (is_float($param))
             return $param;
-        else if (!is_null(InputUtility::getInt($param)))
+        else if (!is_null(InputUtil::getInt($param)))
             return null;
         else if (is_numeric($param))
             return (float)$param;
@@ -41,9 +41,9 @@ class InputUtil
      */
     public static function getIdsString($param)
     {
-        if (!is_null(InputUtility::getInt($param)))
-            return (string)InputUtility::getInt($param);
-        else if (InputUtility::getFloat($param))
+        if (!is_null(InputUtil::getInt($param)))
+            return (string)InputUtil::getInt($param);
+        else if (InputUtil::getFloat($param))
             return null;
         else if (!is_string($param))
             return null;
@@ -54,8 +54,8 @@ class InputUtil
         $values                 = [];
         foreach ($exploded AS $item)
         {
-            if (InputUtility::getInt(trim($item)))
-                $values[]       = InputUtility::getInt(trim($item));
+            if (InputUtil::getInt(trim($item)))
+                $values[]       = InputUtil::getInt(trim($item));
         }
 
         return implode(',', $values);
