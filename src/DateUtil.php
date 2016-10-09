@@ -7,11 +7,11 @@ class DateUtil
 {
 
     /**
-     * @param   string      $format     eg YYYY-MM-DD
      * @param   string      $date
+     * @param   string      $format     eg YYYY-MM-DD
      * @return  bool
      */
-    public static function validate($format, $date)
+    public static function validate($date, $format = 'YYYY-MM-DD')
     {
         if (!is_string($date))
             return false;
