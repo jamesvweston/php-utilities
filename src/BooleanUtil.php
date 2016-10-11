@@ -37,5 +37,19 @@ class BooleanUtil
         else
             return null;
     }
+
+    /**
+     * @param   mixed   $param
+     * @return  string|null
+     */
+    public static function toString($param)
+    {
+        if (BooleanUtil::isTrue($param))
+            return 'true';
+        if (BooleanUtil::isFalse($param))
+            return 'false';
+        else
+            return null;
+    }
     
 }
