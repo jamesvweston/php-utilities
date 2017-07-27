@@ -17,6 +17,21 @@ class ArrayUtil
     }
 
     /**
+     * Get the value and if it's set, unset it
+     * @param       array       $arr
+     * @param       string      $key
+     * @param       null        $default
+     * @return      null
+     */
+    public static function getUnset (&$arr, $key, $default = null)
+    {
+        $value                  = isset($arr[$key]) ? $arr[$key] : $default;
+        if (isset($arr[$key]))
+            unset($arr[$key]);
+        return $value;
+    }
+
+    /**
      * @param       $array
      * @param       $predicate
      * @return      bool
@@ -34,4 +49,5 @@ class ArrayUtil
     {
         return ArrayUtil::all($array, 'is_array');
     }
+
 }
